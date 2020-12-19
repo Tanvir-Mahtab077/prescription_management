@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-  <a class="navbar-brand mr-5 text-warning" href="#"><img src="image/LogoMakr-3dnUlR.png"></a>
+  <a class="navbar-brand mr-5 text-warning" href="#"><img height="70" width="130" src="image/LogoMakr-3dnUlR.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
