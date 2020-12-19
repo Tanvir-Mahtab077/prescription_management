@@ -5,7 +5,6 @@ if (isset($_SESSION['uname'])) {
       header('Location:dashboard.php');
    }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +40,6 @@ if (isset($_SESSION['uname'])) {
                   </div>
                   <button type="submit" class="btn btn-primary btn-block form-control form-control-sm" name="btn">Login</button>
 
-                  <a class="backpage" href="index.php">back to homepage</a>
                   <a class="backpage" href="register.php">don't have an account </a>
 
                   <?php
