@@ -14,7 +14,7 @@ if (isset($_POST['btn'])) {
         while($row = mysqli_fetch_assoc($result)) {
             $_SESSION['uname'] = $row['uname'];
             $_SESSION['pswd'] = $row['password'];
-            header("location:index.php");
+            header("location:dashboard.php");
         }
     } else {
         header('Location:login.php?error=invalid username and password');
