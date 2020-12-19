@@ -17,7 +17,7 @@ if (isset($_POST['btn'])) {
             header("location:index.php");
         }
     } else {
-        echo "invalid";
+        header('Location:login.php?error=invalid username and password');
     }
 }
 

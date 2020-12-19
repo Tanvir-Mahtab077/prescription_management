@@ -1,15 +1,16 @@
-<?php 
-    session_start();  
-    if(isset($_SESSION['uname'])){
-      if($_SESSION['uname'] != null) {
-        header('Location:index.php');
-      }
-}?>
+<?php
+session_start();
+if (isset($_SESSION['uname'])) {
+  if ($_SESSION['uname'] != null) {
+    header('Location:index.php');
+  }
+} ?>
 
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,17 +32,25 @@
           <form action="loginserver.php" method="post">
             <div class="form-group">
               <label class="form-text-sm" for="uname">User Name:</label>
-              <input class="form-control form-control-sm" type="text" placeholder="User Name" name="uname">
+              <input class="form-control form-control-sm" type="text" placeholder="User Name" name="uname" required>
             </div>
 
             <div class="form-group">
               <label for="pwd">Password:</label>
-              <input class="form-control form-control-sm" type="password" placeholder="Enter password" name="pswd">
+              <input class="form-control form-control-sm" type="password" placeholder="Enter password" name="pswd" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block form-control form-control-sm" name="btn">Login</button>
 
             <a class="backpage" href="index.php">back to homepage</a>
             <a class="backpage" href="register.php">don't have an account </a>
+
+            <?php
+            if (isset($_GET['error'])) {
+            ?>
+              <div class="alert alert-danger text-center" role="alert">
+                <?php echo $_GET['error']; ?>  
+              </div>
+            <?php }?>
           </form>
         </div>
       </div>
@@ -50,4 +59,3 @@
 </body>
 
 </html>
-
