@@ -38,6 +38,8 @@
       <input type="text" class="form-control form-control-sm" placeholder="Ex: MBBS,FCPS...." name="deg" required>
     </div>
     <button type="submit" class="btn btn-primary btn-block form-control form-control-sm">Submit</button>
+
+            <a class="backpage" href="login.php">already have an account</a>
   </form>
   </div>
   </div>
